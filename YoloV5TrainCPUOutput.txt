@@ -1,0 +1,93 @@
+AutoBatch: Computing optimal batch size for --imgsz 640
+AutoBatch: CUDA not detected, using default CPU batch-size 16
+optimizer: SGD(lr=0.01) with parameter groups 57 weight(decay=0.0), 60 weight(decay=0.0005), 60 bias
+train: Scanning E:\PyImage_ComputerVision\ObjectDetectionYolo\YoloCustomDetection\Aqurium Dataset\train\labels.cache... 448 images, 1 backgrounds, 0 corrupt: 100%|████████
+val: Scanning E:\PyImage_ComputerVision\ObjectDetectionYolo\YoloCustomDetection\Aqurium Dataset\valid\labels.cache... 127 images, 0 backgrounds, 0 corrupt: 100%|██████████
+
+AutoAnchor: 5.17 anchors/target, 0.999 Best Possible Recall (BPR). Current anchors are a good fit to dataset
+Plotting labels to runs\train\Aqua2\labels.jpg...
+Image sizes 640 train, 640 val
+Using 8 dataloader workers
+Logging results to runs\train\Aqua2
+Starting training for 10 epochs...
+
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+        0/9         0G     0.1132    0.06925    0.06009        135        640: 100%|██████████| 28/28 [03:55<00:00,  8.41s/it]
+                 Class     Images  Instances          P          R      mAP50   mAP50-95:   0%|          | 0/4 [00:00<?, ?it/s]WARNING  NMS time limit 2.100s exceeded
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 4/4 [00:26<00:00,  6.63s/it]
+                   all        127        909     0.0059      0.252    0.00877    0.00215
+
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+        1/9         0G    0.09118    0.07706    0.04823        222        640: 100%|██████████| 28/28 [03:33<00:00,  7.64s/it]
+                 Class     Images  Instances          P          R      mAP50   mAP50-95:   0%|          | 0/4 [00:00<?, ?it/s]WARNING  NMS time limit 2.100s exceeded
+                 Class     Images  Instances          P          R      mAP50   mAP50-95:  25%|██▌       | 1/4 [00:08<00:24,  8.04s/it]WARNING  NMS time limit 2.100s exceeded
+                 Class     Images  Instances          P          R      mAP50   mAP50-95:  50%|█████     | 2/4 [00:14<00:14,  7.11s/it]WARNING  NMS time limit 2.100s exceeded
+                 Class     Images  Instances          P          R      mAP50   mAP50-95:  75%|███████▌  | 3/4 [00:21<00:06,  6.84s/it]WARNING  NMS time limit 2.050s exceeded
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 4/4 [00:28<00:00,  7.10s/it]
+                   all        127        909     0.0257     0.0995     0.0145    0.00383
+
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+        2/9         0G    0.07709    0.06983    0.04138        198        640: 100%|██████████| 28/28 [04:19<00:00,  9.25s/it]
+                 Class     Images  Instances          P          R      mAP50   mAP50-95:   0%|          | 0/4 [00:00<?, ?it/s]WARNING  NMS time limit 2.100s exceeded
+                 Class     Images  Instances          P          R      mAP50   mAP50-95:  25%|██▌       | 1/4 [00:09<00:29,  9.89s/it]WARNING  NMS time limit 2.100s exceeded
+                 Class     Images  Instances          P          R      mAP50   mAP50-95:  50%|█████     | 2/4 [00:17<00:17,  8.65s/it]WARNING  NMS time limit 2.100s exceeded
+                 Class     Images  Instances          P          R      mAP50   mAP50-95:  75%|███████▌  | 3/4 [00:25<00:08,  8.24s/it]WARNING  NMS time limit 2.050s exceeded
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 4/4 [00:32<00:00,  8.23s/it]
+                   all        127        909     0.0314      0.109     0.0294     0.0106
+
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+        3/9         0G    0.07287    0.07164    0.03875        224        640: 100%|██████████| 28/28 [04:35<00:00,  9.83s/it]
+                 Class     Images  Instances          P          R      mAP50   mAP50-95:   0%|          | 0/4 [00:00<?, ?it/s]WARNING  NMS time limit 2.100s exceeded
+                 Class     Images  Instances          P          R      mAP50   mAP50-95:  75%|███████▌  | 3/4 [00:22<00:07,  7.31s/it]WARNING  NMS time limit 2.050s exceeded
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 4/4 [00:29<00:00,  7.32s/it]
+                   all        127        909      0.395      0.164       0.12     0.0374
+
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+        4/9         0G      0.067    0.07095    0.03784        200        640: 100%|██████████| 28/28 [04:23<00:00,  9.42s/it]
+                 Class     Images  Instances          P          R      mAP50   mAP50-95:   0%|          | 0/4 [00:00<?, ?it/s]WARNING  NMS time limit 2.100s exceeded
+                 Class     Images  Instances          P          R      mAP50   mAP50-95:  75%|███████▌  | 3/4 [00:19<00:06,  6.26s/it]WARNING  NMS time limit 2.050s exceeded
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 4/4 [00:25<00:00,  6.44s/it]
+                   all        127        909      0.716      0.175      0.169     0.0669
+
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+        5/9         0G    0.06208    0.06655    0.03269        269        640: 100%|██████████| 28/28 [03:29<00:00,  7.49s/it]
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 4/4 [00:23<00:00,  5.89s/it]
+                   all        127        909      0.602      0.234      0.212     0.0841
+
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+        6/9         0G     0.0586    0.06414    0.03067        171        640: 100%|██████████| 28/28 [03:28<00:00,  7.45s/it]
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 4/4 [00:20<00:00,  5.12s/it]
+                   all        127        909      0.736       0.28      0.255      0.105
+
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+        7/9         0G     0.0541    0.06351    0.02932        181        640: 100%|██████████| 28/28 [03:31<00:00,  7.55s/it]
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 4/4 [00:20<00:00,  5.09s/it]
+                   all        127        909      0.766      0.322      0.324       0.15
+
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+        8/9         0G    0.05243    0.06563    0.02633        182        640: 100%|██████████| 28/28 [03:31<00:00,  7.54s/it]
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 4/4 [00:20<00:00,  5.03s/it]
+                   all        127        909      0.707      0.317      0.323      0.138
+
+      Epoch    GPU_mem   box_loss   obj_loss   cls_loss  Instances       Size
+        9/9         0G     0.0489    0.06433    0.02566        241        640: 100%|██████████| 28/28 [03:30<00:00,  7.50s/it]
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 4/4 [00:20<00:00,  5.01s/it]
+                   all        127        909      0.754      0.327      0.387      0.184
+
+10 epochs completed in 0.709 hours.
+Optimizer stripped from runs\train\Aqua2\weights\last.pt, 14.4MB
+Optimizer stripped from runs\train\Aqua2\weights\best.pt, 14.4MB
+
+Validating runs\train\Aqua2\weights\best.pt...
+Fusing layers...
+Model summary: 157 layers, 7029004 parameters, 0 gradients, 15.8 GFLOPs
+                 Class     Images  Instances          P          R      mAP50   mAP50-95: 100%|██████████| 4/4 [00:17<00:00,  4.46s/it]
+                   all        127        909      0.753      0.327      0.387      0.183
+                  fish        127        459      0.662      0.664      0.702      0.319
+             jellyfish        127        155      0.657      0.923      0.841      0.378
+               penguin        127        104      0.448      0.615      0.517      0.187
+                puffin        127         74          1          0      0.104     0.0411
+                 shark        127         57      0.506     0.0877      0.239      0.145
+              starfish        127         27          1          0      0.151      0.111
+              stingray        127         33          1          0      0.153      0.103
+Results saved to runs\train\Aqua2
